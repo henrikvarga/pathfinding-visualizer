@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'pathfinding-visualizer-angular';
+  this.createBaseGrid();
+
+  function createBaseGrid() {
+  	let table = document.createElement("table");
+	document.body.appendChild(table);
+  }
 }
